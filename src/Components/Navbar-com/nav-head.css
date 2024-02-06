@@ -1,0 +1,36 @@
+
+.image{
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+}
+.title{
+    font-weight: 600;
+}
+header box-icon{
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    transform: translateY(-50%) rotate(180deg);
+    height: 25px;
+    width: 25px;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+box-icon:hover{
+    background: var(--sidebar-color);
+}
+
+nav.close box-icon{
+    transform: translateY(-50%);
+}
+.nav-link.active {
+    background-color: green;
+}

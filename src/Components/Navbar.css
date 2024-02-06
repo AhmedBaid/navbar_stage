@@ -1,0 +1,77 @@
+:root {
+    --body-color: #e4e9f7;
+    --sidebar-color: #fff;
+    --primary-color: #10B981;
+    --primary-color-light: #f6f5ff;
+    --toggle-color: #ddd;
+    --text-color: #707070;
+
+    --transition-duration: 0.3s; /* Adjust transition duration as needed */
+}
+
+nav {
+    background-color: var(--sidebar-color);
+    padding: 10px 14px;
+    transition: background-color var(--transition-duration) ease;
+    white-space: nowrap;
+}
+
+nav.close {
+    width: 88px;
+}
+
+.text {
+    color: var(--text-color);
+    opacity: 1;
+}
+
+nav.close .text {
+    opacity: 0;
+}
+
+.nav-links {
+    height: 50px;
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links ion-icon {
+    min-width: 60px;
+    font-size: 20px;
+}
+
+.nav-links ion-icon,
+.nav-links .text {
+    color: var(--text-color);
+}
+
+.nav-links .a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.nav-links .a:hover {
+    background-color: var(--primary-color);
+    /* transition: background-color var(--transition-duration) ease; */
+}
+
+.nav-links .a.active {
+    background-color: #10B981; /* Background color for active links */
+}
+
+.nav-links .a:hover ion-icon,
+.nav-links .a:hover .text,
+.nav-links .a.active ion-icon,
+.nav-links .a.active .text {
+    color: var(--sidebar-color);
+}
+
+.menu-bar {
+    height: calc(100% - 5px);
+}
